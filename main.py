@@ -61,9 +61,12 @@ def main():
                 break
         print(f"{p1.name} met {p2.name}")
         print(str(p1) + '\n' + str(p2))
+
         p1.meet(p2)
+
         p1.update_hp()
         p2.update_hp()
+
         if p1.age % 30 == 0:
             p1.joy = -10
         if p2.age % 30 == 0:
@@ -72,6 +75,7 @@ def main():
         if random.randint(1, 5) == 1:
             p1.joy -= 10
             p2.joy -= 10
+
         if random.randint(1, 3) == 1:
             p1.joy += 10
             p2.joy += 10
